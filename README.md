@@ -63,11 +63,15 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  renamed Model name from Plural back to singular.
+  Toys => Toy
 
 - Update the number of likes for a toy
 
   - How I debugged:
+  since toy like update is the only action in Toy#update Controller, I rendered json response.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  added :destroy route to toy resources:
